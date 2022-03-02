@@ -6,7 +6,6 @@ public class BankAccount {
 
     //Constructor
     public BankAccount(String accountNumber){
-        //Robi resze
         this.accountNumber = accountNumber;
         this.balance = 0;
     }
@@ -29,7 +28,7 @@ public class BankAccount {
     }
 
     public boolean withdraw(double amount){
-        //Peter
+
         if(amount <= balance){
             balance-=amount;
             return true;
