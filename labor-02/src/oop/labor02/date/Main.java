@@ -17,7 +17,6 @@ public class Main {
         System.out.println(DateUtil.isValidDate(2020, 1, 0) == false);
         System.out.println(DateUtil.isValidDate(2020, 0, 0) == false);
         System.out.println(DateUtil.isValidDate(2020, 4, 31) == false);
-        System.out.println(DateUtil.isValidDate(2020, 1, 31) == true);
 
         MyDate date[] = new MyDate[1000];
         Random rand = new Random();
@@ -37,5 +36,8 @@ public class Main {
             } else count++;
         }
         System.out.println("NEm valid datumok:" + count);
+
+
     }
+
 }
