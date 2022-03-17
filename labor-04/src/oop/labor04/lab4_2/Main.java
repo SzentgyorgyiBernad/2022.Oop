@@ -36,8 +36,8 @@ public class Main {
                 } else {
                     String accountNumber = data[1].trim();
                     double amount = Double.parseDouble(data[2].trim());
-                    customers.get(index).addAccount(accountNumber);
-                    customers.get(index).getAccount(accountNumber).deposit(amount);
+                    customers.get(index).addAccount(new BankAccount(accountNumber));
+                    customers.get(index).getAccount().deposit(amount);
                 }
             }
 
