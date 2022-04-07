@@ -31,6 +31,6 @@ public class MyDate {
         Year=String.valueOf(year);
         Month=String.valueOf(month);
         Day=String.valueOf(day);
-        return Year+" - "+Month+" - "+Day;
+        return "Year:"+Year+" Month:"+Month+" Day:"+Day;
     }
 }

@@ -42,6 +42,11 @@ public class Training {
         return this.course;
     }
 
+    public int numEnrolled()
+    {
+        return enrolledStudents.size();
+    }
+
     public void printToFile()
     {
         String fileName=String.format("%s_%s_%s.csv",course.getName(),startDate,endDate);
@@ -51,6 +56,20 @@ public class Training {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Training{\n" +
+                "        course=" + course +
+                "\n        startDate=" + startDate +
+                "\n        endDate=" + endDate +
+                ", pricePerStudent=" + pricePerStudent +
+                "\n" + enrolledStudents+
+                '}';
+    }
+    public void unenroll(String id)
+    {
 
     }
 }
