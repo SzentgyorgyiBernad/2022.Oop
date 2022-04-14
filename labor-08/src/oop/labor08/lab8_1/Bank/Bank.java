@@ -53,10 +53,10 @@ public class Bank {
         for( Customer2 c: customer ){
             printStream.println( c.getId()+", " + c.FirstName() +", "+
                     c.LastName()+", "+c.getNumAccounts());
-            for(String num:c.getAccountNumbers())
+            /*for(String num:c)
             {
                 System.out.println(num);
-            }
+            }*/
         }
     }
 }
