@@ -5,7 +5,7 @@ public class Main {
         Company company=new Company("Microsoft");
         company.hireAll("bemenet.csv");
         System.out.println("Employees:");
-        System.out.println(company);
+        company.printAll(System.out);
     }
 
 }

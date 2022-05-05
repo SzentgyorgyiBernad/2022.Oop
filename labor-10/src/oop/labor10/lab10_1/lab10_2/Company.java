@@ -48,12 +48,15 @@ public class Company {
                 int month  =Integer.parseInt(items[4].trim());
                 int day  =Integer.parseInt(items[5].trim());
                 MyDate date=new MyDate(year,month,day);
-                String department  = items[6].trim();
-                if(department.length()==0)
+                if(items.length==7)
+                {
+                    String department  = items[6].trim();
+                    employees.add(new Manager(firstName,lastName,salary,date,department));
+                }
+                else
                 {
                     employees.add (new Employee(firstName,lastName,salary,date));
                 }
-                else employees.add(new Manager(firstName,lastName,salary,date,department));
             }
         }catch (FileNotFoundException e)
         {
