@@ -1,6 +1,7 @@
 package oop.labor09;
 
 import oop.labor09.queue.ArrayListQueue;
+import oop.labor09.queue.CircularQueue;
 import oop.labor09.queue.IQueue;
 
 import java.util.Random;
@@ -24,7 +25,7 @@ public class Main {
             }
             queue.printQueue();
         }
-
+        IQueue queue2 = new CircularQueue( 5 );
 
     }
 }
