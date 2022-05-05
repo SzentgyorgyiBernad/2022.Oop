@@ -20,9 +20,6 @@ public class Main {
         ArrayList<Person> persons = new ArrayList<>();
         System.out.println(persons.size());
         persons.add(new Person("Szentgyorgyi","Bernad",2002));
-// Open the file
-// ...
-// Read data from file
         try(Scanner scanner=new Scanner(new File(fileName)))
         {
 
